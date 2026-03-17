@@ -72,7 +72,7 @@ function s=pldapsClassDefaultParameters(s)
 %%% Based on useFor fields
 s.  datapixx.   din.    useFor.     ports = true; % false for adc IR
 s.  datapixx.   din.    useFor.     daq  = false;
-s.  datapixx.   din.    channels.   ports = [0 2 4 6]; %change to your own channel % SZ
+s.  datapixx.   din.    channels.   ports = [0 1 2 3]; %change to your own channel % SZ
 s.  datapixx.   din.    channels.   daq = [];
 
 %s.datapixx.    dio
@@ -119,12 +119,12 @@ s.  datapixx.   dio.    useForReward = 1; % 0 for adc IR
  s. ephys.       role = 'client';
  s. ephys.       localPort = 1234;
  s. ephys.       tcpRemotePort = 1234;
- s. ephys.       dataRoot = '/home/nielsenlab/data/';
+ s. ephys.       dataRoot = '/home/vpixx/data/';
  s. ephys.       trigger.   trialstart = 11;
  s. ephys.       trigger.   stimon = 13;
  s. ephys.       trigger.   spouts = 15; 
  s. ephys.       trigger.   reference = 12;
- s. ephys.       trigger.   wait = 14;
+ s. ephys.       trigger.   wait = 14;rt = '/dev/ttyUSB0';
  s. ephys.       trigger.   lickdelay = 16;
  
 %s.	eyelink.
@@ -181,13 +181,13 @@ s.  datapixx.   dio.    useForReward = 1; % 0 for adc IR
  %old folders for windows machine
  %s.	pldaps.	dirs.	data = 'Y:\Data\Awake\Ferret_behavioral_box'; % datafolder; % FB updated based on initialization code - 9/26/24
  %s.	pldaps.	dirs.	wavfiles = 'Y:\Data\Awake\Ferret_behavioral_box'; %'C:\Users\BriggsLabNaturalSc\Documents\ferret behavior\PLDAPSNL-master\beepsounds'; %SZ
- s.     pldaps. dirs. data = '~/pldapsData';
- s.     pldaps. dirs. dataTmp = '~/pldapsTemp';
- s.     pldaps. dirs. wavfiles = '~/PLDAPSBL/beepsounds'; 
+ s.     pldaps. dirs. data = '/mnt/DATA/pldapsData';
+ s.     pldaps. dirs. dataTmp = '/mnt/DATA/pldapsTemp';
+ s.     pldaps. dirs. wavfiles = '~/PLDAPSTP/beepsounds'; 
 
 %s.	pldaps.	draw.
 %s.	pldaps.	draw.	cursor.
- s.	pldaps.	draw.	cursor.	use = false;
+ s.	pldaps.	draw.	cursor.	use = false;52
 
 %s.	pldaps.	draw.	eyepos.
  s.	pldaps.	draw.	eyepos.	use = false;
