@@ -202,7 +202,7 @@ function p=trialSetup(p)
         p.trialMem.correct = 0;
     end
         
-    % set up stimulus    
+    % set up stimulus    bl
     DegPerPix = p.trial.display.dWidth/p.trial.display.pWidth;
     PixPerDeg = 1/DegPerPix;
     
