@@ -14,18 +14,18 @@ p = defaultBitNames(p);
 
 %-------------------------------------------------------------------------%
 % Stimulus side association
-p.defaultParameters.stimulus.side.LEFT = 6;
-p.defaultParameters.stimulus.side.RIGHT = 0;
-%p.defaultParameters.stimulus.side.MIDDLE = 3;
+p.defaultParameters.stimulus.side.LEFT = 2;
+p.defaultParameters.stimulus.side.RIGHT = 1;
+p.defaultParameters.stimulus.side.MIDDLE = 3;
 
 
 %-------------------------------------------------------------------------%
 % IR beam assignments (relative to port.status)
-p.defaultParameters.stimulus.port.START = 0;
-p.defaultParameters.stimulus.port.LEFT = 4;
-p.defaultParameters.stimulus.port.RIGHT = 1;
-p.defaultParameters.stimulus.port.MIDDLE = 3;
-p.defaultParameters.stimulus.port.EXIT = 5;
+p.defaultParameters.stimulus.port.START = 1;
+p.defaultParameters.stimulus.port.LEFT = 3;
+p.defaultParameters.stimulus.port.RIGHT = 4;
+p.defaultParameters.stimulus.port.MIDDLE = 2;
+%p.defaultParameters.stimulus.port.EXIT = 5;
 
 
 
