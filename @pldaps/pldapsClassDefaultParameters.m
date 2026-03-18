@@ -13,10 +13,9 @@ function s=pldapsClassDefaultParameters(s)
  s. behavior.   reward. propAmtIncorrect = 0.5;    % orginal: 0.2
  s. behavior.   reward. dacAmp = 10;
  s. behavior.   reward. nChannels = 3;
- % changed by SZ, cannot be 0
- s. behavior.   reward. channel. START = 3; %dac channel for reward delivery
- s. behavior.   reward. channel. LEFT = 1;
- s. behavior.   reward. channel. RIGHT = 5;
+ s. behavior.   reward. channel. START = 1; %dac channel for reward delivery
+ s. behavior.   reward. channel. LEFT = 3;
+ s. behavior.   reward. channel. RIGHT = 2;
  % s. behavior.   reward. channel. MIDDLE = 0;
  
 %s. behavior.   optogenetics
@@ -67,16 +66,13 @@ function s=pldapsClassDefaultParameters(s)
  s. datapixx.   dac.    sampleRate = 1000;
  
 %s. datapixx.   din.
-%%% No channel mapping here,
-%%% Moved to datapixx.din.start
-%%% Based on useFor fields
 s.  datapixx.   din.    useFor.     ports = true; % false for adc IR
 s.  datapixx.   din.    useFor.     daq  = false;
 s.  datapixx.   din.    channels.   ports = [0 1 2 3]; %change to your own channel % SZ
 s.  datapixx.   din.    channels.   daq = [];
 
 %s.datapixx.    dio
-s.  datapixx.   dio.    useForReward = 1; % 0 for adc IR
+s.  datapixx.   dio.    useForReward = 1; % 0 use dio for reward
 
 
 %s.	datapixx.	GetPreciseTime.
