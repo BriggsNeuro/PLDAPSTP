@@ -15,7 +15,7 @@ function s=pldapsClassDefaultParameters(s)
  s. behavior.   reward. nChannels = 3;
  s. behavior.   reward. channel. START = 1; %dac channel for reward delivery
  s. behavior.   reward. channel. LEFT = 3;
- s. behavior.   reward. channel. RIGHT = 2;
+ s. behavior.   reward. channel. RIGHT = 4;
  % s. behavior.   reward. channel. MIDDLE = 0;
  
 %s. behavior.   optogenetics
